@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vizzyseen - Personal Blog & Portfolio</title>
+    <title>Vizzyseen - Personal Blog & Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div>
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -20,89 +20,90 @@
                 <li><a href="#predict">Predict and Win</a></li>
                 <li><a href="#history">History</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#pay">Pay and Collect 10x</a></li>
             </ul>
         </nav>
         <h1>Welcome to My Personal Space</h1>
     </header>
 
-    <section id="home">
-        <div class="hero">
+    <main>
+        <section id="home" class="hero">
             <h2>Your Personal Blog & Financial Portfolio</h2>
             <p>Sharing my journey, projects, and business ideas.</p>
-        </div>
-    </section>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief biography about who you are, your skills, and interests.</p>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A brief biography about who you are, your skills, and interests.</p>
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="gallery">
-            <!-- Example project -->
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Project Title</h3>
-                <p>Short description of the project.</p>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="gallery">
+                <!-- Example project -->
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <!-- Add more projects here -->
             </div>
-            <!-- Add more projects here -->
-        </div>
-    </section>
+        </section>
 
-    <section id="blog">
-        <h2>My Blog</h2>
-        <article class="post">
-            <h3>Blog Post Title</h3>
-            <p>Excerpt from the blog post. <a href="#">Read more</a></p>
-        </article>
-        <!-- Add more blog posts here -->
-    </section>
+        <section id="blog">
+            <h2>My Blog</h2>
+            <article class="post">
+                <h3>Blog Post Title</h3>
+                <p>Excerpt from the blog post. <a href="#">Read more</a></p>
+            </article>
+            <!-- Add more blog posts here -->
+        </section>
 
-    <section id="business">
-        <h2>Business Promotion</h2>
-        <p>Information about your business offerings, services, and products.</p>
-    </section>
+        <section id="business">
+            <h2>Business Promotion</h2>
+            <p>Information about your business offerings, services, and products.</p>
+        </section>
 
-    <section id="airdrops">
-        <h2>Airdrops & Giveaways</h2>
-        <p>Information on current or upcoming airdrops and giveaways. <a href="#">Participate now</a></p>
-    </section>
+        <section id="airdrops">
+            <h2>Airdrops & Giveaways</h2>
+            <p>Information on current or upcoming airdrops and giveaways. <a href="#">Participate now</a></p>
+        </section>
 
-    <section id="predict">
-        <h2>Predict and Win</h2>
-        <p>Participate in predictions for a chance to win rewards. <a href="#">Join the game</a></p>
-    </section>
+        <section id="predict">
+            <h2>Predict and Win</h2>
+            <p>Participate in predictions for a chance to win rewards. <a href="#">Join the game</a></p>
+        </section>
 
-    <section id="history">
-        <h2>My History</h2>
-        <p>Timeline of your professional and personal achievements and milestones.</p>
-    </section>
+        <section id="history">
+            <h2>My History</h2>
+            <p>Timeline of your professional and personal achievements and milestones.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Connect with me on <a href="#">Social Media</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Connect with me on <a href="#">Social Media</a></p>
+        </section>
 
-    <section id="pay">
-        <h2>Pay and Collect 10x</h2>
-        <p>Special challenge: Pay for a service or enter a challenge to collect 10 times your payment. <a href="#">Participate Now</a></p>
-    </section>
+        <section id="pay">
+            <h2>Pay and Collect 10x</h2>
+            <p>Special challenge: Pay for a service or enter a challenge to collect 10 times your payment. <a href="#">Participate Now</a></p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Victor. All rights reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
-
-/* General styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -132,7 +133,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-section {
+main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -227,42 +228,38 @@ form button:hover {
         flex-direction: column;
     }
 }
+// Optional JavaScript for interactivity
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Your webpage is ready!');
+    // Add any JavaScript functionality here
+});
 /* CSS for using the image as a background */
 #banner {
     width: 100%;
     height: 400px;
-    background-image: url('images/tellmenaija.png'); /* Update with the correct path */
+    background-image: url('assets/images/tellmenaija.png'); /* Update the path as needed */
     background-size: cover;
     background-position: center;
 }
 
-/* CSS for placing the image directly */
+/* CSS for directly embedding the image */
 img#logo {
-    width: 100%; /* Adjust the size as needed */
+    width: 100%; /* Adjust the size as required */
     max-width: 400px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-
-
-<div id="banner">
-    <!-- This div will have the image as a background -->
-</div>
-
-<!-- Or, directly use the image -->
-<img id="logo" src="images/tellmenaija.png" alt="tellmenaija">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tellmenaija</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div id="banner"></div>
-    <img id="logo" src="{% static 'images/tellmenaija.png' %}" alt="tellmenaija">
+    <img id="logo" src="{{ url_for('static', filename='images/tellmenaija.png') }}" alt="tellmenaija">
 </body>
 </html>

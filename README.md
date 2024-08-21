@@ -9,7 +9,6 @@
 </head>
 <body>
     <header>
-        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -41,7 +40,6 @@
         <h2>My Projects</h2>
         <div class="gallery">
             <!-- Example project -->
-            <div class="project">
                 <img src="images/project1.jpg" alt="Project 1">
                 <h3>Project Title</h3>
                 <p>Short description of the project.</p>
